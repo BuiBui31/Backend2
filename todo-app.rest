@@ -7,8 +7,8 @@ POST http://localhost:5004/auth/register
 Content-Type: application/json
 
 {
-    "username": "12",
-    "password": "2112"
+    "username": "ycxvyxcv",
+    "password": "vxycvyxcvxycvxycv"
 }
 
 ###
@@ -16,6 +16,32 @@ POST http://localhost:5004/auth/login
 Content-Type: application/json
 
 {
-    "username": "12",
-    "password": "dsafasdf"
+    "username": "ycxvyxcv",
+    "password": "vxycvyxcvxycvxycv"
 }
+
+###
+GET http://localhost:5004/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1Mjg1OTc4LCJleHAiOjE3NTUzNzIzNzh9.-oqNbaVL5LnI-gxumlUuiHNYTj2TeA7QEZmJD_thZMU
+###
+POST http://localhost:5004/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1Mjg1OTc4LCJleHAiOjE3NTUzNzIzNzh9.-oqNbaVL5LnI-gxumlUuiHNYTj2TeA7QEZmJD_thZMU
+Content-Type: application/json
+
+{
+    "task": "Finish adsfasdf"
+}
+
+###
+PUT http://localhost:5004/todos/2
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1Mjg1OTc4LCJleHAiOjE3NTUzNzIzNzh9.-oqNbaVL5LnI-gxumlUuiHNYTj2TeA7QEZmJD_thZMU
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+
+###
+Delete http://localhost:5004/todos/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1Mjg1OTc4LCJleHAiOjE3NTUzNzIzNzh9.-oqNbaVL5LnI-gxumlUuiHNYTj2TeA7QEZmJD_thZMU

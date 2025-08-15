@@ -30,7 +30,7 @@ router.post('/register', (req,res) => {
 
 router.post('/login', (req,res) => {
 
-    const {username,password} = req.body
+    const {username,password} = req.body 
 
     try {
         const getUser = db.prepare('SELECT * FROM users WHERE username = ?')
